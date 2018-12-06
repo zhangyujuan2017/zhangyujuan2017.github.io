@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang=>
+  <head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  
+    <link rel="icon" href="">
+  
+    
+  <title>ʹ��hexo+github���Ѹ��˲�����ϸ�̳� | 博客</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/lib/jquery.fancybox.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+  <div class="header-container">
+    <a class="logo" href="/">
+      <span>博客</span>
+    </a>
+    <ul class="right-header">
+      
+        <li class="nav-item">
+          
+            <a href="/" class="item-link">首页</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/web" class="item-link">前端</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/infor" class="item-link">随笔</a>
+          
+        </li>
+      
+        <li class="nav-item">
+          
+            <a href="/about" class="item-link">关于</a>
+          
+        </li>
+      
+    </ul>
+  </div>
+</header>
+
+  <main id="post">
+  <div class="content">
+    <article>
+        <section class="content markdown-body">
+          <h1>ʹ��hexo+github���Ѹ��˲�����ϸ�̳�</h1>
+          <div class="post-meta">
+            <i class="fa fa-calendar" aria-hidden="true"></i> <time>2017/09/27</time>
+            
+            
+          </div>
+          <h2 id="1-j��"><a href="#1-j��" class="headerlink" title="1. ǰ��"></a>1. ǰ��</h2><h3 id="1-1׼������"><a href="#1-1׼������" class="headerlink" title="1.1׼������"></a>1.1׼������</h3><p>��1�� ��һ��github�˺ţ�û�еĻ�ȥע��һ����<br>��2�� ��װ��node.js��npm�����˽���ػ���֪ʶ��<br>��3�� ��װ��git for windows����������git�ͻ��ˣ�������ͼ��</p>
+<h2 id="2-�github����"><a href="#2-�github����" class="headerlink" title="2. �github����"></a>2. �github����</h2><h3 id="2-1�����ֿ�"><a href="#2-1�����ֿ�" class="headerlink" title="2.1�����ֿ�"></a>2.1�����ֿ�</h3><p>�½�һ����Ϊ����û���.github.io�Ĳֿ⣬����˵��������github�û�����test����ô����½�test.github.io�Ĳֿ⣨����������û���������������Ч�������������վ���ʵ�ַ���� <a href="http://test.github.io" target="_blank" rel="noopener">http://test.github.io</a> �ˣ��ǲ��Ǻܷ��㣿</p>
+<p>�ɴ˿ɼ���ÿһ��github�˻����ֻ�ܴ���һ����������ֱ��ʹ���������ʵĲֿ⡣<br>ע�⣺<br>��1�� ע�������һ��Ҫ��֤�����򲻻�ɹ���<br>��2�� �ֿ����ֱ����ǣ�username.github.io������username������û�����<br>��3�� �ֿⴴ���ɹ�����������Ч����Ҫ��һ��ʱ�䣬���10-30���ӣ����߸��ã��ҵĵ��˰��Сʱ����Ч��</p>
+<h3 id="2-2������"><a href="#2-2������" class="headerlink" title="2.2������"></a>2.2������</h3><p>��Ȼ���㲻�������϶�Ҳ�ǿ��Եģ�����Ĭ�ϵ� xxx.github.io �����ʣ�������������һ�㣬��ӵ��һ�������Լ�����������Ҳ��OK�ġ�<br>������Ҫע��һ������������ȥ�����ƣ�<br><a href="https://wanwang.aliyun.com/?spm=5176.8142029.selected.4.6e186d3eZT484b" target="_blank" rel="noopener">https://wanwang.aliyun.com/?spm=5176.8142029.selected.4.6e186d3eZT484b</a><br>��������֮��ȥ��������<br>����������</p>
+<p>��������2���������www�Ͳ���www�ġ�<br>�������������2�ַ�ʽ��CNAME��A��¼��CNAME��д������A��¼��дIP�����ڲ���www��ʽֻ�ܲ���A��¼�����Ա�����pingһ������û���.github.io��IP��Ȼ���������DNS����ҳ����A��¼ָ����ping������IP����CNAMEָ������û���.github.io���������Ա�֤�����Ƿ�����www�����Է��ʣ����£�</p>
+<p>ע�⣺<br>���pingһ������û���.github.io��IP<br>ֱ��git bashһ�¾ͻ����������ͼ:</p>
+<h2 id="3-����SSH-key"><a href="#3-����SSH-key" class="headerlink" title="3. ����SSH key"></a>3. ����SSH key</h2><p>ΪʲôҪ��������أ���Ϊ���ύ����϶�Ҫӵ�����githubȨ�޲ſ��ԣ�����ֱ��ʹ���û���������̫����ȫ�ˣ���������ʹ��ssh key��������غͷ��������������⡣<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  <span class="built_in">cd</span> ~/. ssh <span class="comment">#��鱾���Ѵ��ڵ�ssh��Կ</span></span><br></pre></td></tr></table></figure></p>
+<p>�����ʾ��No such file or directory ˵�����ǵ�һ��ʹ��git��<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  ssh-keygen -t rsa -C <span class="string">"�ʼ���ַ"</span> <span class="comment">#�����ַ�������ע��githubʱ������</span></span><br></pre></td></tr></table></figure></p>
+<p>Ȼ������3�λس������ջ�����һ���ļ����û�Ŀ¼�£����û�Ŀ¼���ҵ�.ssh\id_rsa.pub�ļ������±��򿪲�������������ݣ������github��ҳ������������� -&gt; SSH and GPG keys -&gt; New SSH key��</p>
+<p>���ո��Ƶ�����ճ����key���title�������档<br>ע�⣺<br>��δ��û�Ŀ¼���ҵ�.ssh\id_rsa.pub�ļ�</p>
+<h3 id="3-1�����Ƿ�ɹ�"><a href="#3-1�����Ƿ�ɹ�" class="headerlink" title="3.1�����Ƿ�ɹ�"></a>3.1�����Ƿ�ɹ�</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com <span class="comment"># ע�������ַ���øľ���git@github.com</span></span><br></pre></td></tr></table></figure>
+<p>�����ʾAre you sure you want to continue connecting (yes/no)?������yes��Ȼ��ῴ����<br>Hi zhangyujuan2017! You’ve successfully authenticated, but GitHub does not provide shell access.<br>�������������Ϣ˵��SSH�����óɹ���<br>������ʱ�㻹��Ҫ���ã�<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">"zhangyujuan2017"</span>// ���github�û��������ǳ�</span><br><span class="line">$ git config --global user.email  <span class="string">"xxx@qq.com"</span>// ��д���githubע������</span><br></pre></td></tr></table></figure></p>
+<h2 id="4-ʹ��hexoд����"><a href="#4-ʹ��hexoд����" class="headerlink" title="4. ʹ��hexoд����"></a>4. ʹ��hexoд����</h2><h3 id="4-1-hexo���"><a href="#4-1-hexo���" class="headerlink" title="4.1 hexo���"></a>4.1 hexo���</h3><p>Hexo��һ���򵥡����١�ǿ��Ļ��� Github Pages �Ĳ��ͷ������ߣ�֧��Markdown��ʽ�����ڶ�������������<br>��ַ��<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a></p>
+<h3 id="4-2ԭ��"><a href="#4-2ԭ��" class="headerlink" title="4.2ԭ��"></a>4.2ԭ��</h3><p>����github pages��ŵĶ��Ǿ�̬�ļ������ʹ�ŵĲ�ֻ���������ݣ����������б������ࡢ��ǩ����ҳ�ȶ�̬���ݣ�����ÿ��д��һƪ���¶�Ҫ�ֶ����²���Ŀ¼�����������Ϣ������˭������������hexo�����ľ��ǽ���Щmd�ļ������ڱ��أ�ÿ��д�����º����д�õ�����������������ҳ������ɣ�Ȼ���ٽ��иĶ���ҳ���ύ��github</p>
+<h3 id="4-3ע������"><a href="#4-3ע������" class="headerlink" title="4.3ע������"></a>4.3ע������</h3><p>��1���ܶ�����ȿ�����Windows��cmd����ɣ�Ҳ����ʹ��git bash����ɣ����ǲ����������һЩ���⣬Ϊ���ⲻ��Ҫ�����⣬����ȫ��ʹ��git bash��ִ�У�<br>��2��hexo��ͬ�汾���Ƚϴ����Ϻܶ����µ�������Ϣ���ǻ���2.x�ģ�����ע�ⲻҪ���󵼣�<br>��3��hexo��2��_config.yml�ļ���һ���Ǹ�Ŀ¼�µ�ȫ�ֵ�_config.yml��һ���Ǹ���theme�µģ�</p>
+<h3 id="4-4��װ"><a href="#4-4��װ" class="headerlink" title="4.4��װ"></a>4.4��װ</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$  cnpm  install  �Cg  hexo</span><br></pre></td></tr></table></figure>
+<h3 id="4-5��ʼ��"><a href="#4-5��ʼ��" class="headerlink" title="4.5��ʼ��"></a>4.5��ʼ��</h3><p>�ڵ��Ե�ĳ���ط��½�һ����Ϊhexo���ļ��У����ֿ������ȡ���������ҵ���d:\Workspaces\hexo����������ļ��н�������Ϊ���Ŵ���ĵط���������ò�Ҫ���š�<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">$ <span class="built_in">cd</span> /f/Workspaces/hexo/</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<p>hexo���Զ�����һЩ�ļ������Ŀ¼������node_modules��Ŀ¼�ṹ����ͼ��</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g <span class="comment"># ����</span></span><br><span class="line">$ hexo s <span class="comment"># ��������</span></span><br></pre></td></tr></table></figure>
+<p>ִ����������֮��hexo�ͻ���public�ļ����������html�ļ�����Щ�ļ���������Ҫ�ύ��githubȥ�ģ�</p>
+<p>hexo s�ǿ�������Ԥ�����񣬴���������� <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ���ɿ������ݣ��ܶ��˻����������һֱ��תȦ���Ǿ��Ǽ��ز����������⣬һ�����������Ϊ�˿�ռ�õ�Ե�ʣ���Ϊ4000����˿�̫������<br>��һ�γ�ʼ����ʱ��hexo�Ѿ�������д��һƪ��Ϊ Hello World �����£�Ĭ�ϵ�����Ƚϳ󣬴�ʱ����������ӣ�</p>
+<h3 id="4-6-�޸�����"><a href="#4-6-�޸�����" class="headerlink" title="4.6 �޸�����"></a>4.6 �޸�����</h3><p>��ȻĬ������ܳ������Ǳ�Ĳ������������滻һ���ÿ�������⡣���ǹٷ�����<a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>��������������⣺<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> ��ַ</span><br></pre></td></tr></table></figure></p>
+<p>���غ�����ⶼ�����</p>
+<p>�޸�_config.yml�е�theme: landscape��Ϊtheme: yilia��Ȼ������ִ��hexo g���������ɡ�<br>����<br>�������һЩĪ����������⣬������ִ��hexo clean������һ��public�����ݣ�Ȼ�������������ɺͷ�����</p>
+<h3 id="4-7�ϴ�֮j"><a href="#4-7�ϴ�֮j" class="headerlink" title="4.7�ϴ�֮ǰ"></a>4.7�ϴ�֮ǰ</h3><p>���ϴ����뵽github֮ǰ��һ��Ҫ�ǵ��Ȱ�����ǰ���д���������������Ȼgithub�а汾������������һ�����Ǻõģ�����Ϊ��hexo�ύ����ʱ�������ǰ�����д��붼ɾ����</p>
+<h3 id="4-8�ϴ���github"><a href="#4-8�ϴ���github" class="headerlink" title="4.8�ϴ���github"></a>4.8�ϴ���github</h3><p>�����һ�ж����ú��ˣ������ϴ������ף�һ��hexo d�͸㶨����Ȼ�ؼ�������Ҫ�����ж������úá�<br>���ȣ�ssh key�϶�Ҫ���úá�<br>��Σ�����_config.yml���й�deploy�Ĳ��֣�<br>��ȷд����<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: git@github.com:zhangyujuan2017/zhangyujuan2017.github.io.git <span class="comment"># zhangyujuan2017���Լ����û���</span></span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>Ū��֮�󣬻���Ҫ��װһ���������hexo�ļ���git bash����<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git �Csave</span><br></pre></td></tr></table></figure></p>
+<p>�����git bash������hexo d�ͻὫ�����иĶ��Ĵ���ȫ���ύ��û�иĶ��Ĳ��᣺</p>
+<p>�ύ������һ�´���<br>$ hexo g<br>$ hexo d</p>
+<ul>
+<li>1</li>
+<li>2<br>ע�⣺��һ���ϴ�֮ǰ���һ�¸�Ŀ¼�Ƿ���.deploy_git�ļ��У�����н���ɾ�����������ֽ�������Ŀ¼���ļ��ϴ�������Ҫ��ֻ��public������ļ�</li>
+</ul>
+<p>Ū��֮�������վ���Է����ˣ� ���ʵ�ַ??�û���.github.io<br>�������û����������е㲻ˬ����Ҳ�����޸ĵ�Ŷ���ĳ��Լ������� ? .com .cn �ȡ�<br>����Ĳֿ����洴��һ������Ϊ CNAME���ļ�<br>��ͼ�п��Կ������Ѿ������ˣ�Ȼ��༭���������������</p>
+<p>Ȼ����������������Ϳ��Է����Լ��Ĳ�����</p>
+<h2 id="5-д����"><a href="#5-д����" class="headerlink" title="5. д����"></a>5. д����</h2><h3 id="5-1��������"><a href="#5-1��������" class="headerlink" title="5.1��������"></a>5.1��������</h3><p>��дmarkdown�õ��� word����Ȼ��Ҳ������������eg��text��markdown�༭��<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new  <span class="string">'�����������'</span></span><br></pre></td></tr></table></figure></p>
+<p>����������Զ����� markdown �ļ���λ�� source_posts �ļ����£����������ɵ�ģ��<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: postName <span class="comment">#����ҳ���ϵ���ʾ���ƣ�һ��������</span></span><br><span class="line">date: 2013-12-02 15:30:16 <span class="comment">#��������ʱ�䣬һ�㲻�ģ���ȻҲ���������޸�</span></span><br><span class="line">categories: Ĭ�Ϸ��� <span class="comment">#����</span></span><br><span class="line">tags: [tag1,tag2,tag3] <span class="comment">#���±�ǩ���ɿգ����ǩ���ø�ʽ��ע��:�����и��ո�</span></span><br><span class="line">description: ����һ������ժҪ�����������140�����ڣ��������meta��description����</span><br><span class="line">---</span><br><span class="line">����������</span><br></pre></td></tr></table></figure></p>
+<p>С��ʾ�����ɵ���������ҳ��Ĭ����ȫ����ʾ�ģ���Ҳ�����������е�ĳ������<a id="more"></a>?ʹ��߶���С�����Ե���Ķ�����</p>
+<h3 id="5-2���ӷ���"><a href="#5-2���ӷ���" class="headerlink" title="5.2���ӷ���"></a>5.2���ӷ���</h3><p>����Ĭ�ϵķ�������ҳ����ʣ�����������Ӷ༸�����࣬��ôʵ���أ�<br>�� theme/hexo-theme-Aath �ļ������ҵ�_config.yml �ļ����޸� menu</p>
+<p>Ȼ����scaffolds�ļ������޸�post.md�ļ�</p>
+<p>ע�⣺������±����и÷��࣬�������������Ч�������������ӵ�web<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: ������С���� 01</span><br><span class="line">date: 2017-09-27 20:23:13</span><br><span class="line">tags: С����</span><br><span class="line">web: ǰ��</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>�ο���ַ��</p>
+<ol>
+<li><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html</a></li>
+<li><a href="https://www.cnblogs.com/zhangqie/p/7978394.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhangqie/p/7978394.html</a></li>
+<li><a href="https://blog.csdn.net/lmj623565791/article/details/51319147" target="_blank" rel="noopener">https://blog.csdn.net/lmj623565791/article/details/51319147</a></li>
+<li><a href="https://blog.csdn.net/weixin_38788347/article/details/78154487" target="_blank" rel="noopener">https://blog.csdn.net/weixin_38788347/article/details/78154487</a></li>
+</ol>
+
+        </section>
+    </article>
+    
+        
+  </div>
+  <aside>
+    
+    <div class="toc-container">
+        <h1>目录</h1>
+        <div class="content">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-j��"><span class="toc-number">1.</span> <span class="toc-text">1. ǰ��</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1׼������"><span class="toc-number">1.1.</span> <span class="toc-text">1.1׼������</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-�github����"><span class="toc-number">2.</span> <span class="toc-text">2. �github����</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1�����ֿ�"><span class="toc-number">2.1.</span> <span class="toc-text">2.1�����ֿ�</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2������"><span class="toc-number">2.2.</span> <span class="toc-text">2.2������</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-����SSH-key"><span class="toc-number">3.</span> <span class="toc-text">3. ����SSH key</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1�����Ƿ�ɹ�"><span class="toc-number">3.1.</span> <span class="toc-text">3.1�����Ƿ�ɹ�</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-ʹ��hexoд����"><span class="toc-number">4.</span> <span class="toc-text">4. ʹ��hexoд����</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-hexo���"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 hexo���</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2ԭ��"><span class="toc-number">4.2.</span> <span class="toc-text">4.2ԭ��</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3ע������"><span class="toc-number">4.3.</span> <span class="toc-text">4.3ע������</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-4��װ"><span class="toc-number">4.4.</span> <span class="toc-text">4.4��װ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-5��ʼ��"><span class="toc-number">4.5.</span> <span class="toc-text">4.5��ʼ��</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-6-�޸�����"><span class="toc-number">4.6.</span> <span class="toc-text">4.6 �޸�����</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-7�ϴ�֮j"><span class="toc-number">4.7.</span> <span class="toc-text">4.7�ϴ�֮ǰ</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-8�ϴ���github"><span class="toc-number">4.8.</span> <span class="toc-text">4.8�ϴ���github</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-д����"><span class="toc-number">5.</span> <span class="toc-text">5. д����</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1��������"><span class="toc-number">5.1.</span> <span class="toc-text">5.1��������</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-2���ӷ���"><span class="toc-number">5.2.</span> <span class="toc-text">5.2���ӷ���</span></a></li></ol></li></ol>
+        </div>
+    </div>
+    
+  </aside>
+</main>
+
+
+
+  <footer>
+  <div class="copyright">
+    <div>
+      &copy; 2018 | Powered by <a href="https://hexo.io" target="_blank">Hexo</a>&nbsp
+    </div>
+    <div>
+      Theme by <a href="https://github.com/lewis-geek/hexo-theme-Aath" target="_blank">Aath</a>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="/lib/in-view.min.js"></script>
+<script src="/lib/lodash.min.js"></script>
+<script>
+  var isDown = true
+  var oldY = 0
+  inView.offset(50)
+
+  document.body.addEventListener('touchstart', function(){});
+  
+  window.addEventListener('scroll', _.throttle(e => {
+    var currentY = window.scrollY
+    if((oldY - currentY) < 0) {
+      isDown = true
+    } else {
+      isDown = false
+    }
+    oldY = currentY
+  }, 250))
+
+  $("article img").each(function() {
+      var strA = "<a data-fancybox='gallery' href='" + this.src + "'></a>";
+      $(this).wrapAll(strA);
+  });
+
+  $('.toc-link').each(function() {
+      var href = $(this).attr("href");
+      
+      inView(href).on('exit', () => {
+        if (isDown) {
+          handleActive(href)
+        }
+      })
+
+      inView(href).on('enter', () => {
+        if (!isDown) {
+          handleActive(href)
+        }
+      })
+
+      this.onclick = function(e) {
+        var pos = $(href).offset().top - 10;
+        $("html,body").animate({scrollTop: pos}, 300);
+        setTimeout(() => {
+          handleActive(href)
+        }, 350)
+        return false
+      }
+  })
+
+  function handleActive(href) {
+    document.querySelectorAll('.toc-link').forEach(elm => {
+      elm.classList.remove('active')
+    })
+    document.querySelector(".toc [href='"+ href +"']").classList.add('active')
+  }
+</script>
+<script src="/lib/jquery.fancybox.min.js"></script>
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+</body>
+</html>

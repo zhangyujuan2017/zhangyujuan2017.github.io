@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>JS盒模型 | 博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="JS盒子模型  JS中提供了与盒子模型相关的属性  CSS盒子模型属性：width   ，   height   ，   border   ，   margin  ，  padding  13个属性中，只有与scrollLeft和scrollTop可以设置值，其他只能获取值 client系列(跟溢出的内容无关) clientWidth = width+padding(左右) clientHeigh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS盒模型">
+<meta property="og:url" content="http://yoursite.com/2017/06/02/JS盒模型/index.html">
+<meta property="og:site_name" content="博客">
+<meta property="og:description" content="JS盒子模型  JS中提供了与盒子模型相关的属性  CSS盒子模型属性：width   ，   height   ，   border   ，   margin  ，  padding  13个属性中，只有与scrollLeft和scrollTop可以设置值，其他只能获取值 client系列(跟溢出的内容无关) clientWidth = width+padding(左右) clientHeigh">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-17T09:00:25.101Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="JS盒模型">
+<meta name="twitter:description" content="JS盒子模型  JS中提供了与盒子模型相关的属性  CSS盒子模型属性：width   ，   height   ，   border   ，   margin  ，  padding  13个属性中，只有与scrollLeft和scrollTop可以设置值，其他只能获取值 client系列(跟溢出的内容无关) clientWidth = width+padding(左右) clientHeigh">
+  
+    <link rel="alternate" href="/atom.xml" title="博客" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-JS盒模型" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/06/02/JS盒模型/" class="article-date">
+  <time datetime="2017-06-02T12:44:03.000Z" itemprop="datePublished">2017-06-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      JS盒模型
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="JS盒子模型"><a href="#JS盒子模型" class="headerlink" title="JS盒子模型"></a>JS盒子模型</h4><p>  JS中提供了与盒子模型相关的属性<br>  CSS盒子模型属性：width   ，   height   ，   border   ，   margin  ，  padding<br>  <code>13个属性中，只有与scrollLeft和scrollTop可以设置值，其他只能获取值</code></p>
+<h5 id="client系列-跟溢出的内容无关"><a href="#client系列-跟溢出的内容无关" class="headerlink" title="client系列(跟溢出的内容无关)"></a>client系列(跟溢出的内容无关)</h5><ul>
+<li>clientWidth = width+padding(左右)</li>
+<li>clientHeight = height+padding(上下)</li>
+<li>clientLeft  左边框</li>
+<li>clientTop 上边框  <h5 id="offset系列-跟溢出内容无关"><a href="#offset系列-跟溢出内容无关" class="headerlink" title="offset系列(跟溢出内容无关)"></a>offset系列(跟溢出内容无关)</h5><ul>
+<li>offsetWidth = width + padding(左右) + border(左右) = clientWidth + border(左右)</li>
+<li>offsetHeight = height + padding(上下) + border(上下) = clientHeight + border(左右)</li>
+<li>与偏移量相关</li>
+</ul>
+</li>
+<li>offsetParent 参照物</li>
+<li>offsetLeft 左偏移量</li>
+<li>offsetTop 上偏移量  <h5 id="scroll系列-跟溢出内容有关"><a href="#scroll系列-跟溢出内容有关" class="headerlink" title="scroll系列 (跟溢出内容有关)"></a>scroll系列 (跟溢出内容有关)</h5></li>
+<li>scrollWidth ≈ width（获取真实的宽度）+ 左padding值   约等于真实宽度</li>
+<li>scrollHeight ≈  height（获取真实的高度）+ 上padding值 约等于真实的高度<br><code>为什么是约等于？</code></li>
+<li>各个浏览器的行高不一样</li>
+<li>相同浏览器是否设置overflow属性，值也不一样</li>
+<li>跟滚动条相关<ul>
+<li>scrollLeft 横向卷出去的内容</li>
+<li>scrollTop 纵向卷出去的内容 </li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+<h5 id="获取一屏的高度和整个文档的高度"><a href="#获取一屏的高度和整个文档的高度" class="headerlink" title="获取一屏的高度和整个文档的高度"></a>获取一屏的高度和整个文档的高度</h5><p>一屏的高度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.documentElement.clientHeight || document.body.clientHeight</span><br></pre></td></tr></table></figure>
+<p>文档的高度</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">document.documentElement.scrollHeight||document.body.scrollHeight</span><br></pre></td></tr></table></figure>
+<p>若没有溢出的内容，一屏的高度和文档的高度是一样</p>
+<h5 id="（一）盒子模型滚动条卷去的宽度和高度"><a href="#（一）盒子模型滚动条卷去的宽度和高度" class="headerlink" title="（一）盒子模型滚动条卷去的宽度和高度"></a>（一）盒子模型滚动条卷去的宽度和高度</h5><p><strong>scrollTop/scrollLeft：</strong>滚动条卷去的高度或者宽度<br>最小卷去值：0<br>最大卷去值：真实页面的高度-一屏幕的高度 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">//最大卷去值：真实页面的高度-一屏幕的高度</span><br><span class="line"></span><br><span class="line">document.documentElement.scrollHeight-document.documentElement.clientHeight</span><br></pre></td></tr></table></figure>
+<p>在谷歌浏览器下：</p>
+<p> 操作浏览器的盒子模型属性，我们一般都要写两套，用来兼容各种模式下的浏览器，但是这样写很麻烦，所以我们给它封装起来，方便操作</p>
+<p><strong><code>操作浏览器盒子模型属性的封装方法</code></strong></p>
+<pre><code>let winHandle=function(attr,value){
+    if(type value !==&apos;undefined&apos;){
+        //设置盒子模型属性值：scroll-Top/Left
+        document.documentElement[attr]=value;
+        document.body[attr]=value;
+        return;
+    }
+    return document.documentElement[arr] || document.body[attr];
+}
+//document.documentElement[arr]在document.body[attr]前边，只有找不到document.documentElement[arr]的时候才会用到后面的
+</code></pre><p> ps：在JS盒子模型13个属性中，只有<br> scrollTop/Left是<code>可读写</code>属性，其余都是<code>只读</code>属性</p>
+<h5 id="（二）盒子偏移量和OFFET"><a href="#（二）盒子偏移量和OFFET" class="headerlink" title="（二）盒子偏移量和OFFET"></a>（二）盒子偏移量和OFFET</h5><p><strong>offsetParent：</strong>当前盒子的父级参照物</p>
+<p><strong>offsetTop /  offsetLeft：</strong>获取当前盒子距离其父级参照物的偏移量（上偏移 / 左偏移）从当前盒子的外边框开始~父级参照物的内边框</p>
+<p><strong>参照物：</strong>最近的，已经定位的父级元素，若没有找到已经定位的父级元素，则它的参照物是body</p>
+<p><strong>偏移量：</strong>当前元素外边框到参照物内边框的距离</p>
+<p> （1）同一平面中，元素的父级参照物和结构没有必然联系，默认她们的父级参照物都是body（当前平面最外层的盒子）<br><code>body的父级参照物是null</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">center.offsetParent     //=&gt;body</span><br><span class="line">inner.offsetParent      //=&gt;body</span><br><span class="line">outer.offsetParent      //=&gt;body</span><br></pre></td></tr></table></figure>
+<p> （2）参照物可以改变：构建不同的平面即可（使用z-index，但是这个属性只对定位有作用），所以改变元素的定位（position : relative / absolute  / fixed）可以改变其父级参照物</p>
+<p>第一种方式：offset：获取当前元素距离body的偏移（左偏移和上偏移）</p>
+<pre><code>let offset=function(curEle){
+
+    //1.先获取当前元素本身的左/上偏移
+    let curLeft=curEle.offsetLeft,
+    curTop=curEle.offsetTop;
+    p=curEle.offsetParent;
+
+    //2.累加父级参照物的边框和偏移（一直向上找，找到body为止，每当找到一个父级参照物都把它的边框和偏移累加起来，根据元素不一样，具体找几次也不知道（用while循环））
+    //tagName获取当前元素的标签名（大写的）
+    while(p.tagName!==&apos;BODY&apos;){//当找到的父级参照物是BODY结束查找和累加操作
+    //3.把找到的父级参照物的边框和偏移值累加起来
+    curLeft+=p.clientLeft;
+    curLeft+=p.offsetLeft;
+    curTop+=p.clientTop;
+    curTop+=p.offsetTop;
+    p=p.offsetParent;//基于当前找到的父级参照物继续向上查找
+    }
+}
+</code></pre><p>第二种方式：不管当前元素的参照物是谁，要求当前元素到body的偏移量</p>
+<pre><code> var inner=document.getElementById(&apos;inner&apos;);
+ //不管当前元素的参照物是谁，要求当前元素到body的偏移量
+ function offset(ele){
+    //先获取当前元素到参照物的偏移量
+    var l=ele.offsetLeft;
+    var t=ele.offsetTop;
+    var p=ele.offsetParent;
+    //判断参照物是不是body,如果不是继续累加，反之，结束
+    while(p&amp;&amp;p!==document.body){//p判断要排除ele是body元素的情况，和排除p是body的情况。
+        l+= p.offsetLeft+ p.clientLeft;
+        t+= p.offsetTop+ p.clientTop;
+        p= p.offsetParent;
+    }
+    return {
+        l:l,
+        t:t
+    }
+}
+console.log(offset(inner).l);//传入的参数ele，只能是对象
+</code></pre><h5 id="（三）封装一个总方法，实现css方法统一操作样式"><a href="#（三）封装一个总方法，实现css方法统一操作样式" class="headerlink" title="（三）封装一个总方法，实现css方法统一操作样式"></a>（三）封装一个总方法，实现css方法统一操作样式</h5><p> css：集合get、set、set-group为一体的方法</p>
+<pre><code>let css=function(...arg){
+    //...arg是剩余运算符，传递的实参集合。因为ES6不支持arguments，基本上arguments相当于是...arg
+    let len=arg.length;
+    if(len&gt;=3){
+        //单一设置：set-css
+        //arg=[outer,&apos;width&apos;,500];
+        //setCss(outer,&apos;width&apos;,500);
+        //setCss.apply(null,arg);
+        setCss(...arg);
+        return;
+    }
+    if(len===2 &amp;&amp; typeof arg[1]===&apos;object&apos; &amp;&amp; arg[1]!==null){
+    //传递两个参数，第二个参数是一个对象（不是null），说明想要操作的是批量设置
+    setGroupCss(...arg);
+    return;
+    }
+    //剩下的代表获取样式
+    return getCss(...arg);
+
+};
+console.log(css(outer,&apos;width&apos;));
+css(outer,&apos;width&apos;,500);
+css(outer,{
+    width:600,
+    height:500,
+    opacity:0.5
+});
+</code></pre><p>优化后的代码：</p>
+<pre><code>let css=function(...arg){
+    let len=arg.length,
+    second=arg[1],
+    fn=getCss;
+    len&gt;=3 ? fn=setCss : null;
+    len===2 &amp;&amp; (second instanceof Object) ? fn= setGroupCss : null;
+    return fn(...arg);
+
+}
+console.log(css(outer,&apos;width&apos;));
+css(outer,&apos;width&apos;,500);
+//在JQ类库中也存在一个方法叫做css，我们就是模拟JQ给大家讲解的css方法
+</code></pre><h5 id="（四）封装，实现set-Group-css批量设置元素的样式"><a href="#（四）封装，实现set-Group-css批量设置元素的样式" class="headerlink" title="（四）封装，实现set-Group-css批量设置元素的样式"></a>（四）封装，实现set-Group-css批量设置元素的样式</h5><blockquote>
+<p>for  in ：循环，遍历一个对象中的键值对的，有多少组键值对，我们就遍历多少次</p>
+</blockquote>
+<blockquote>
+<p>setGroupCss：给元素批量设置样式</p>
+</blockquote>
+<pre><code>let setGroupCss=function(curEle,options={}){
+    //遍历传递的options，有多少键值对就循环多少次，每一次都调取set-css方法逐一设置即可
+    for(let attr in options){
+        if(!options.hasOwnProperty(attr)) break;
+        //options：传递进来的需要修改的样式对象（集合）
+        //attr：每一次遍历到的集合中的某一项（要操作的样式属性名）
+        //options[attr]：传递的要操作的样式属性值
+        setCss(curEle,attr,options[attr]);
+    }
+};
+setGroupCss(outer,{
+    width:400,
+    height:400,
+    padding:30
+});
+</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/06/02/JS盒模型/" data-id="cjps3jhy30003uoo0xb483ryn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/07/ajax动态绑定数据/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          ajax动态绑定数据
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/17/JS变量提升/">JS变量提升</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/10/ajax详细教程/">ajax详细教程</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/14/模块化开发/">模块化开发</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/07/ajax动态绑定数据/">ajax动态绑定数据</a>
+          </li>
+        
+          <li>
+            <a href="/2017/06/02/JS盒模型/">JS盒模型</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 张小张<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

@@ -14,7 +14,7 @@
 <meta property="og:site_name" content="博客">
 <meta property="og:description" content="ajax动态绑定数据//ajax的作用：在不刷新页面的基础上，实现数据局部更新     //ajax的四步骤：     //1.创建一个ajax对象     var xhr = new XMLHttpRequest();     //2.打开一个链接地址（请求一个接口地址）     //第一个参数表示请求的方式  第二个参数表示请求的接口地址 第三参数表示请求是同步还是异步 true异步 fals">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-17T08:18:04.884Z">
+<meta property="og:updated_time" content="2018-12-17T08:25:27.554Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ajax动态绑定数据">
 <meta name="twitter:description" content="ajax动态绑定数据//ajax的作用：在不刷新页面的基础上，实现数据局部更新     //ajax的四步骤：     //1.创建一个ajax对象     var xhr = new XMLHttpRequest();     //2.打开一个链接地址（请求一个接口地址）     //第一个参数表示请求的方式  第二个参数表示请求的接口地址 第三参数表示请求是同步还是异步 true异步 fals">
@@ -102,49 +102,12 @@
     }
     //4.发送请求
     xhr.send(null);</code><br><a id="more"></a></p>
-<p><strong>动态绑定数据：</strong></p>
-<p>`    <ul id="list"></ul></p>
-<pre><code>&lt;/ul&gt;
+<p><strong>动态绑定数据：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">   &lt;ul id=&quot;list&quot;&gt;</span><br><span class="line"></span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">   //获取数据</span><br><span class="line">   var xhr = new XMLHttpRequest();</span><br><span class="line">   xhr.open(&quot;get&quot;,&quot;./data.json&quot;,false);</span><br><span class="line">   var data = null;</span><br><span class="line">   xhr.onreadystatechange = function()&#123;</span><br><span class="line">       if(xhr.readyState==4 &amp;&amp; /^2\d&#123;2&#125;$/.test(xhr.status))&#123;</span><br><span class="line">           data = JSON.parse(xhr.responseText);</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   xhr.send(null);</span><br><span class="line"></span><br><span class="line">   //绑定数据方法一：字符串拼接</span><br><span class="line">   //有几条数据就应该有几个li,每个li的内容是每条数据里title字段的值</span><br><span class="line">   /*var str =&quot;&quot;;//用来累加li字符串</span><br><span class="line">   for(var i = 0;i&lt;data.length;i++)&#123;</span><br><span class="line">       var cur = data[i];//每条数据，cur是数组中每个对象</span><br><span class="line">       //str+=&quot;&lt;li&gt;&quot;+cur.title+&quot;&lt;/li&gt;&quot;; //字符串拼接</span><br><span class="line">       str+=`&lt;li&gt;$&#123;cur.title&#125;&lt;/li&gt;`; //es6的模板字符串  变量放在$&#123;&#125;里</span><br><span class="line">   &#125;</span><br><span class="line">   var oUl = document.getElementById(&quot;list&quot;);</span><br><span class="line">   oUl.innerHTML = str;*/</span><br><span class="line"></span><br><span class="line">   //绑定数据方法二：DOM的方式</span><br><span class="line">    var oUl = document.getElementById(&quot;list&quot;);</span><br><span class="line">    var frg = document.createDocumentFragment();//文档碎片</span><br><span class="line">    for(var i = 0;i&lt;data.length;i++)&#123;</span><br><span class="line">       var cur = data[i];</span><br><span class="line">       var oLi = document.createElement(&quot;li&quot;);</span><br><span class="line">       oLi.innerHTML = cur.title;</span><br><span class="line">       frg.appendChild(oLi);</span><br><span class="line">   &#125;</span><br><span class="line">   oUl.appendChild(frg);//只会渲染一次</span><br><span class="line">   //回流 页面布局发生改变时，页面所有的内容都会重新渲染</span><br><span class="line">   //会流 某个元素的外观发生变化，只会对这个元素重新渲染</span><br></pre></td></tr></table></figure></p>
 
-//获取数据
-var xhr = new XMLHttpRequest();
-xhr.open(&quot;get&quot;,&quot;./data.json&quot;,false);
-var data = null;
-xhr.onreadystatechange = function(){
-    if(xhr.readyState==4 &amp;&amp; /^2\d{2}$/.test(xhr.status)){
-        data = JSON.parse(xhr.responseText);
-    }
-}
-xhr.send(null);
-
-//绑定数据方法一：字符串拼接
-//有几条数据就应该有几个li,每个li的内容是每条数据里title字段的值
-/*var str =&quot;&quot;;//用来累加li字符串
-for(var i = 0;i&lt;data.length;i++){
-    var cur = data[i];//每条数据，cur是数组中每个对象
-    //str+=&quot;&lt;li&gt;&quot;+cur.title+&quot;&lt;/li&gt;&quot;; //字符串拼接
-    str+=`&lt;li&gt;${cur.title}&lt;/li&gt;`; //es6的模板字符串  变量放在${}里
-}
-   var oUl = document.getElementById(&quot;list&quot;);
-   oUl.innerHTML = str;*/
-
-   //绑定数据方法二：DOM的方式
-    var oUl = document.getElementById(&quot;list&quot;);
-    var frg = document.createDocumentFragment();//文档碎片
-    for(var i = 0;i&lt;data.length;i++){
-    var cur = data[i];
-    var oLi = document.createElement(&quot;li&quot;);
-    oLi.innerHTML = cur.title;
-    frg.appendChild(oLi);
-}
-oUl.appendChild(frg);//只会渲染一次
-//回流 页面布局发生改变时，页面所有的内容都会重新渲染
-//会流 某个元素的外观发生变化，只会对这个元素重新渲染`
-</code></pre>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/08/07/ajax动态绑定数据/" data-id="cjps1rrmi0000g8o0gw5eg5ie" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/07/ajax动态绑定数据/" data-id="cjps22dob0000dwo0tqo9zdfs" class="article-share-link">Share</a>
       
       
     </footer>
@@ -184,7 +147,7 @@ oUl.appendChild(frg);//只会渲染一次
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
     </div>
   </div>
 
@@ -198,6 +161,10 @@ oUl.appendChild(frg);//只会渲染一次
         
           <li>
             <a href="/2018/12/06/测试/">测试</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/10/ajax详细教程/">ajax详细教程</a>
           </li>
         
           <li>

@@ -5,15 +5,19 @@
   
 
   
-  <title>博客</title>
+  <title>ajax动态绑定数据 | 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="ajax动态绑定数据//ajax的作用：在不刷新页面的基础上，实现数据局部更新     //ajax的四步骤：     //1.创建一个ajax对象     var xhr = new XMLHttpRequest();     //2.打开一个链接地址（请求一个接口地址）     //第一个参数表示请求的方式  第二个参数表示请求的接口地址 第三参数表示请求是同步还是异步 true异步 fals">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ajax动态绑定数据">
+<meta property="og:url" content="http://yoursite.com/2017/08/07/ajax动态绑定数据/index.html">
 <meta property="og:site_name" content="博客">
+<meta property="og:description" content="ajax动态绑定数据//ajax的作用：在不刷新页面的基础上，实现数据局部更新     //ajax的四步骤：     //1.创建一个ajax对象     var xhr = new XMLHttpRequest();     //2.打开一个链接地址（请求一个接口地址）     //第一个参数表示请求的方式  第二个参数表示请求的接口地址 第三参数表示请求是同步还是异步 true异步 fals">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-12-17T08:18:04.884Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客">
+<meta name="twitter:title" content="ajax动态绑定数据">
+<meta name="twitter:description" content="ajax动态绑定数据//ajax的作用：在不刷新页面的基础上，实现数据局部更新     //ajax的四步骤：     //1.创建一个ajax对象     var xhr = new XMLHttpRequest();     //2.打开一个链接地址（请求一个接口地址）     //第一个参数表示请求的方式  第二个参数表示请求的接口地址 第三参数表示请求是同步还是异步 true异步 fals">
   
     <link rel="alternate" href="/atom.xml" title="博客" type="application/atom+xml">
   
@@ -60,91 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-测试" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/06/测试/" class="article-date">
-  <time datetime="2018-12-06T09:34:57.000Z" itemprop="datePublished">2018-12-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/06/测试/">测试</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>白月光—张信哲<br>白月光  心里某个地方<br>那么亮  却那么冰凉<br>每个人  都有一段悲伤<br>想隐藏  却欲盖弥彰<br>
-        
-          </p><p class="article-more-link">
-            <a href="/2018/12/06/测试/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/06/测试/" data-id="cjps1rrmw0001g8o075dcwuhe" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-模块化开发" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/12/14/模块化开发/" class="article-date">
-  <time datetime="2017-12-14T09:04:06.000Z" itemprop="datePublished">2017-12-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/14/模块化开发/">模块化开发</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><strong>高内聚</strong>是指一个软件模块是由相关性很强的代码组成，只负责一项任务，也就是常说的单一责任原则。<br><strong>低耦合</strong>，粗浅的理解是：一个完整的系统，模块与模块之间，尽可能的使其独立存在。也就是说，让每个模块，尽可能的独立完成某个特定的子功能。模块与模块之间的接口，尽量的少而简单。如果某两个模块间的关系比较复杂的话，最好首先考虑进一步的模块划分。这样有利于修改和组合。<br>模块就是实现特定功能的一组方法。<br>只要把不同的函数（以及记录状态的变量）简单地放在一起，就算是一个模块。</p>
-        
-          <p class="article-more-link">
-            <a href="/2017/12/14/模块化开发/#more">Read More</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/12/14/模块化开发/" data-id="cjps1rrqk0002g8o08x37s625" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-ajax动态绑定数据" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-ajax动态绑定数据" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/08/07/ajax动态绑定数据/" class="article-date">
   <time datetime="2017-08-07T08:13:08.000Z" itemprop="datePublished">2017-08-07</time>
@@ -157,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/07/ajax动态绑定数据/">ajax动态绑定数据</a>
+    <h1 class="article-title" itemprop="name">
+      ajax动态绑定数据
     </h1>
   
 
@@ -181,12 +101,46 @@
        }
     }
     //4.发送请求
-    xhr.send(null);</code><br>
-        
-          </p><p class="article-more-link">
-            <a href="/2017/08/07/ajax动态绑定数据/#more">Read More</a>
-          </p>
-        
+    xhr.send(null);</code><br><a id="more"></a></p>
+<p><strong>动态绑定数据：</strong></p>
+<p>`    <ul id="list"></ul></p>
+<pre><code>&lt;/ul&gt;
+
+//获取数据
+var xhr = new XMLHttpRequest();
+xhr.open(&quot;get&quot;,&quot;./data.json&quot;,false);
+var data = null;
+xhr.onreadystatechange = function(){
+    if(xhr.readyState==4 &amp;&amp; /^2\d{2}$/.test(xhr.status)){
+        data = JSON.parse(xhr.responseText);
+    }
+}
+xhr.send(null);
+
+//绑定数据方法一：字符串拼接
+//有几条数据就应该有几个li,每个li的内容是每条数据里title字段的值
+/*var str =&quot;&quot;;//用来累加li字符串
+for(var i = 0;i&lt;data.length;i++){
+    var cur = data[i];//每条数据，cur是数组中每个对象
+    //str+=&quot;&lt;li&gt;&quot;+cur.title+&quot;&lt;/li&gt;&quot;; //字符串拼接
+    str+=`&lt;li&gt;${cur.title}&lt;/li&gt;`; //es6的模板字符串  变量放在${}里
+}
+   var oUl = document.getElementById(&quot;list&quot;);
+   oUl.innerHTML = str;*/
+
+   //绑定数据方法二：DOM的方式
+    var oUl = document.getElementById(&quot;list&quot;);
+    var frg = document.createDocumentFragment();//文档碎片
+    for(var i = 0;i&lt;data.length;i++){
+    var cur = data[i];
+    var oLi = document.createElement(&quot;li&quot;);
+    oLi.innerHTML = cur.title;
+    frg.appendChild(oLi);
+}
+oUl.appendChild(frg);//只会渲染一次
+//回流 页面布局发生改变时，页面所有的内容都会重新渲染
+//会流 某个元素的外观发生变化，只会对这个元素重新渲染`
+</code></pre>
       
     </div>
     <footer class="article-footer">
@@ -196,11 +150,23 @@
     </footer>
   </div>
   
-</article>
-
+    
+<nav id="article-nav">
+  
+    <a href="/2017/12/14/模块化开发/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          模块化开发
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
-
+</article>
 
 </section>
         
